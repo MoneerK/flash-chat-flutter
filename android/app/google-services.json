@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054983948471",
+    "project_id": "flash-chat-8c165",
+    "storage_bucket": "flash-chat-8c165.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054983948471:android:18c00fbc2c7b27b4902532",
+        "android_client_info": {
+          "package_name": "com.moneerkattan.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054983948471-4vmou1voskp42m5ctai3jmqbvch884pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3kyx0da3kQ6YgtWBpsIq0eVx7ng2fSp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054983948471-4vmou1voskp42m5ctai3jmqbvch884pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
