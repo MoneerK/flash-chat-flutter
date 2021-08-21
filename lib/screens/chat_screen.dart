@@ -75,7 +75,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
-                  FlatButton(
+                  // FlatButton(
+                  TextButton(
                     onPressed: () {
                       messageTextController
                           .clear(); //Implement send functionality.
