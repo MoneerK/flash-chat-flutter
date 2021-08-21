@@ -5,7 +5,6 @@ import 'package:flash_chat/Components/rounded_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
-
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'registration_screen';
   @override
@@ -17,9 +16,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   bool showSpinner = false;
   String email;
   String password;
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +80,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       showSpinner = false;
                     });
                   }
-
                   catch (e) {
                     print(e);
                   }
