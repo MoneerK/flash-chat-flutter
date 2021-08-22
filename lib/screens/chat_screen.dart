@@ -73,7 +73,14 @@ class _ChatScreenState extends State<ChatScreen> {
                   TextButton(
                     onPressed: () {
                       messageTextController.clear();
-                      _firestore.collection('messages').add({
+                      _firestore
+                          .collection('messages')
+                          .doc(
+                            DateTime.now()
+                                .toString()
+                                .replaceAll(RegExp('[-:. ]'), ''),
+                          )
+                          .set({
                         'text': messageText,
                         'sender': loggedinuser.email,
                       });
@@ -107,6 +114,9 @@ class MessagesStream extends StatelessWidget {
           );
         }
         final messages = snapshot.data.docs.reversed;
+        // final messages = snapshot.data.docs.sort(
+        //
+        // );
         List<MessageBubble> messageBubbles = [];
         for (var message in messages) {
           final messageText = message.get('text'); //text
